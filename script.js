@@ -35,7 +35,7 @@ const board = (() => {
       if (game.winnerDeclared == false) {
         if (game.remainingSpots > 0) {
           game.alertNext();
-          game.nextPlayer;
+          game.nextPlayer();
         } else if (game.remainingSpots == 0) {
           game.declareTie();
         }
@@ -46,7 +46,7 @@ const board = (() => {
   return { gameBoard };
 })();
 
-const game = () => {
+const game = (() => {
   // player declarations
   const playerOne = playerFact('Player 1', 'X');
   const playerTwo = playerFact('Player 2', 'O');
@@ -115,4 +115,4 @@ const game = () => {
     declareTie,
     winnerDeclared,
   };
-};
+})();
