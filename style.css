@@ -17,3 +17,18 @@
 .box {
   border: black 1px solid;
 }
+
+.box:hover {
+  cursor: pointer;
+  background-color: rgb(238, 238, 238);
+}
+
+.X {
+  background-color: red;
+  color: rgba(255, 0, 0, 0.26);
+}
+
+.O {
+  background-color: blue;
+  color: rgb(0, 0, 102);
+}
